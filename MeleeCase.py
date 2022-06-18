@@ -19,7 +19,7 @@ def openacase():
         meleesunlocked += 1
         print("You have unlocked " + str(meleesunlocked) + " melee(s) at attempt " + str(Caseopens) + "Current spending until melee:" + str(Casetotalcost*Caseopens))
     else:
-        print("Nope,Current attemps:" + str(Caseopens))
+        print("Nope,Current attemps:" + str(Caseopens) + " Current Chance: " + str(casestartingchance + (caseincrementalchance*Caseopens)*100))
     casestartingchance += caseincrementalchance
 
 i = 0
